@@ -50,7 +50,8 @@ void setup() {
   smooth();
   
   PFont font = loadFont("ARBONNIE-48.vlw");
-  textFont(font, 24);
+  //textFont(font, 24);
+  textFont(font, 20)
   
   /*
   // デモではスコアの保存はしない
