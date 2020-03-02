@@ -2,16 +2,47 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>TipsNote : GitHub Pages Sample</title>
+    <title>falling block puzzle デモ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
+    <!--
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    -->
     <script src="./processing.js"></script>
 </head>
 
 <body>
     <main>
-        <h1>GitHub Pages のサンプルです</h1>
+        <h1>falling block puzzle デモページ</h1>
+        <center>
         <canvas data-processing-sources="falling_block_puzzle.pde"></canvas>
+        </center>
+        <h2>遊び方</h2>
+        <table>
+            <tr>
+                <th>キー</th>
+                <th>説明</th>
+            </tr>
+            <tr>
+                <td><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd></td>
+                <td>移動。</td>
+            </tr>
+            <tr>
+                <td><kbd>↑</kbd></td>
+                <td>ハードドロップ(最下層まで即落下)。</td>
+            </tr>
+            <tr>
+                <td><kbd>Space</kbd></td>
+                <td>回転。</td>
+            </tr>
+            <tr>
+                <td><kbd>Shift</kbd></td>
+                <td>ホールド。</td>
+            </tr>
+            <tr>
+                <td><kbd>1</kbd></td>
+                <td>透過モード。ゲーム中に通常モードとの切り替え可能。隙間がある場合ブロックをすり抜ける。</td>
+            </tr>
+        </table>
     </main>
 </body>
 </html>
