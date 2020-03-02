@@ -228,7 +228,7 @@ void ending() {
 
         fill(#D8F565, sflash);
         // textSize(24);
-        textSize(10);
+        textSize(8);
         text("new score !!", 60, height / 2 + (new1 - 1) * 20);
 
         sflash -= sf;
@@ -239,7 +239,7 @@ void ending() {
 
     fill(255);
     // textSize(40);
-    textSize(24);
+    textSize(20);
     text("1st ", width / 2 - 70, height / 2 - 20);
 
     // textSize(24);
@@ -367,7 +367,7 @@ void drawFrame() {
   text(string[3], (margin - NWIDTH) / 2 + (NWIDTH - textWidth(string[3])) / 2, 330);
 
   if (through == 1) {                // penetrative mode
-    textSize(10);
+    textSize(7);
     fill(252, 100, 50);
     text(string[4], m, 220);
     text(string[5], m+13, 240);
