@@ -228,7 +228,7 @@ void ending() {
 
         fill(#D8F565, sflash);
         // textSize(24);
-        textSize(8);
+        textSize(10);
         text("new score !!", 60, height / 2 + (new1 - 1) * 20);
 
         sflash -= sf;
