@@ -50,8 +50,7 @@ void setup() {
   smooth();
   
   PFont font = loadFont("ARBONNIE-48.vlw");
-  //textFont(font, 24);
-  textFont(font, 20)
+  textFont(font, 24);
   
   /*
   // デモではスコアの保存はしない
@@ -182,9 +181,11 @@ void title() {
 
   fill(255);
   textAlign(CENTER);
-  textSize(56);
+  // textSize(56);
+  textSize(40);
   text("falling block puzzle", width / 2, height / 2);
-  textSize(24);
+  // textSize(24);
+  textSize(18);
 
   fill(255, flash);
   text("press the  \" space \"  key and start game", width / 2, height / 2 + 30);
@@ -215,7 +216,8 @@ void ending() {
   case 1:
     fill(255);
     textAlign(CENTER);
-    textSize(48);
+    // textSize(48);
+    textSize(38);
     text("ranking", width / 2, height / 2 - 60);
 
     int new1 = -1;
@@ -225,7 +227,8 @@ void ending() {
           new1 = i;
 
         fill(#D8F565, sflash);
-        textSize(24);
+        // textSize(24);
+        textSize(18);
         text("new score !!", 60, height / 2 + (new1 - 1) * 20);
 
         sflash -= sf;
@@ -235,18 +238,22 @@ void ending() {
     }
 
     fill(255);
-    textSize(40);
+    // textSize(40);
+    textSize(32);
     text("1st ", width / 2 - 70, height / 2 - 20);
 
-    textSize(24);
+    // textSize(24);
+    textSize(18);
     text("2nd ", width / 2 - 70, height / 2);
     text("3rd ", width / 2 - 70, height / 2 + 20);
     text("4th ", width / 2 - 70, height / 2 + 40);
     text("5th ", width / 2 - 70, height / 2 + 60);
 
     for (int i = 0; i < NSCORE - 1; i++) {
-      if (i == 0) textSize(40);
-      else textSize(24);
+      // if (i == 0) textSize(40);
+      if (i == 0) textSize(32);
+      // else textSize(24);
+      else textSize(18);
       textAlign(LEFT);
       text(score[i], width / 2 - 40, height / 2 + (i - 1) * 20);
     }
@@ -360,6 +367,7 @@ void drawFrame() {
   text(string[3], (margin - NWIDTH) / 2 + (NWIDTH - textWidth(string[3])) / 2, 330);
 
   if (through == 1) {                // penetrative mode
+    textSize(18);
     fill(252, 100, 50);
     text(string[4], m, 220);
     text(string[5], m+13, 240);
