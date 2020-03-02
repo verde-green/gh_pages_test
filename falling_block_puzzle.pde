@@ -51,7 +51,9 @@ void setup() {
   
   PFont font = loadFont("ARBONNIE-48.vlw");
   textFont(font, 24);
-
+  
+  /*
+  // デモではスコアの保存はしない
   reader = createReader("scores.txt");
   
   try {
@@ -70,6 +72,7 @@ void setup() {
 
   String list[] = loadStrings("scores.txt");   // load a text file
   score = int(split(list[0], " "));
+  */
 
   initialize();
 }
@@ -133,13 +136,15 @@ void draw() {
       scoreSort();
       time_count = 1;
     }
-
+    
+    /*
     output = createWriter("scores.txt");
     for (int i = 0; i < NSCORE; i++) {
       output.print(score[i]+" ");
     }
     output.flush();
     output.close();
+    */
 
     ending();
     break;
